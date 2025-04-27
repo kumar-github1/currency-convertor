@@ -74,7 +74,7 @@ function App() {
               </select>
             </div>
           </div>
-          <div className='mt-6 border-dashed border-sky-400 border-2 px-5 py-3 text-center rounded-sm'>
+          <div className='mt-3 border-dashed border-sky-400 border-2 px-5 py-3 text-center rounded-sm'>
             <h2 className='text-sky-500 text-md font-semibold'>{amount} {from} is equal to {convAmount} {to}</h2>
           </div>
         </div>
