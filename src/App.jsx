@@ -35,7 +35,7 @@ function App() {
     <>
       <div className='bg-gray-900 h-screen flex justify-center items-center flex-col'>
         <img src="exchange.png" alt="" className='w-90' />
-        <div className="w-102 bg-white rounded-md px-6 py-2">
+        <div className="w-95 bg-white rounded-md px-6 py-2">
           <div className='flex justify-center pt-2 pb-6'>
             <img src="logo.webp" alt="currency convertor" className='w-2/5 rounded-lg ' />
           </div>
@@ -49,9 +49,9 @@ function App() {
             <div className='py-2'>
               <label htmlFor="amount" className='text-gray-400 text-lg'>Amount:</label><br />
               <input type="text" value={amount} onChange={e => handleChange(e)} className='border-2 border-solid border-gray-200 rounded-md p-1.5 w-full mt-2 focus:outline-sky-400' />
-              {error && <label htmlFor="" className='text-red-600'>Enter the value for currency</label>}
+              {error && <label htmlFor="" className='text-red-600 relative'>Enter the value for currency</label>}
             </div>
-            <div className='py-2'>
+            <div>
               <label htmlFor="from" className='text-gray-400 text-lg'>From Currency:</label><br />
               <select name="" id="" className='border-2 border-solid border-gray-200 rounded-md p-1.5 w-full mt-2 focus:outline-sky-400 text-gray-700' onChange={e => setFrom(e.target.value)}>
                 <option value="USD" >USD - UNITED STATES DOLLAR</option>
@@ -78,7 +78,7 @@ function App() {
             <h2 className='text-sky-500 text-md font-semibold'>{amount} {from} is equal to {convAmount} {to}</h2>
           </div>
         </div>
-      </div>
+      </div >
     </>
   )
 }
